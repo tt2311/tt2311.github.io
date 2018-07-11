@@ -1,0 +1,108 @@
+<!--Class 2 - Create and style a navigation bar for one-page-website-->
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+	<!-- Links needed for Boostrap - css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!--Link to personal CSS stylesheet -->
+	<link rel = "stylesheet" href = "pr1.css">
+
+	<title>One Page Website</title>
+
+	<!-- Link to Jquery script for Nav. Bar -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+</script> 
+</head>
+
+<body>
+	<!--Using BootStrap CSS-->
+	<!--Navigation Bar -->
+		<div class = "nav" id ="nav-wrapper">
+			<ul>
+				<li><a href = '#about' class = "text-dark">ABOUT</a></li>
+				<li><a href = '#summer18' class = "text-dark">INTERESTS</a></li>
+				<li><a href = '#contact' class = "text-dark">CONTACT</a></li>
+			</ul>
+		</div>
+<!--About Section-->
+	<div class = "container-fluid" > 
+		<div class = "row" id = "about" style = "border: 10px solid #cecece;"> 
+			<div class = "col-8" "image">
+				<img src = "https://ih0.redbubble.net/image.303428969.0926/ap,550x550,12x16,1,transparent,t.u1.png" alt= "Responsive image" style = "width:auto; height: auto; opacity: 0.40;" class = "img-fluid">
+				<h1 class= "text-sm-left">hello.</h1>
+					<p id = "intro" class = "text-right"> This summer, I am planning to read voraciously, learn more about front-end development, and be present for family and friends. Join me as I document my process. <br><br>"I've been making a list of the things they don't teach you at school. They don't teach you how to love somebody. They don't teach you how to be famous. They don't teach you how to be rich or how to be poor. They don't teach you how to walk away from someone you don't love any longer. They don't teach you how to know what's going on in someone else's mind. They don't teach you what to say to someone who's dying. They don't teach you anything worth knowing." - Neil Gailman, <b>The Kindly Ones</b></p> 
+			</div>
+			<div class = "col-4 profilepic">
+				<br>
+				<br>
+				<div class = "authorinfo"> <p> <b>Author's Info</b> <br> My name is Tracy and I am an elementary educator in NYC. I am pursuing my other passions such as technology/coding and reading.</p></div> 
+				<div class = "middle" style= "margin: 10%">
+				<img src = 'profilepicture.jpeg' class = "img-fluid img-thumbnail ppic" alt= "Responsive image">	
+				</div>
+				
+			</div>
+		</div>
+
+		<!--Summer2018 Section-->
+		<div class = "row align-items-start" id = "summer18" style = "border: 10px solid #cecece;">
+			<div class = "col bg-white text-dark">
+				<p class = "text-sm-center text">Books Read 2018<br><b>In Progress</b><br> Cathy O'Neil's <i>Weapons of Math Destruction</i></p>
+				<div class = "gif" style="width:100%;height:50%;padding-bottom:75%; position:absolute;"> 
+					<iframe src="https://giphy.com/embed/3o85xBwvWcj1Z11Gda" width="100%" height="100%" style="position:absolute; border:3px solid black" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+				
+			</div>
+			
+			<div class = "col bg-white text-dark">
+				<p class = "text-sm-center text">Concepts Learned</p>
+				<p class = "text"> Transitions and Translations in CSS <br> Flexbox/Grid Systems/Git/Github</p>
+				<div class = "gif" style="width:100%;height:50%;padding-bottom:75%;position:absolute;"><iframe src="https://giphy.com/embed/zhJR6HbK4fthC" width="100%" height="100%" style="position:absolute; border:3px solid black" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+				<br>
+				<br>
+				<br>
+			</div>
+			
+			
+			<div class = "col bg-white text-dark">
+				<p class = "text-sm-center text">Friends + Family</p> 
+				<p class = "text"> Richard Strauss's <i> Whipped Cream</i> <br> @ Lincoln Center: Ballet 7/3/18 </p>
+				<div class = "gif" style="width:100%;height:0;padding-bottom:75%;position:absolute;"><iframe src="https://giphy.com/embed/b3SqmYpsBJQPK" width="100%" height="100%" style="position:absolute; border:3px solid black" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+			</div>
+		</div>
+
+		<div class = "row bg-white text-dark text-center" id = "contact" style = "border: 10px solid #cecece;">
+		<div class = "container-fluid">
+			<p id = "contactinfo"><b>Questions or Comments?</b></p> <br><p>Feel free to also reach me @ tracythai.ny@gmail.com</p>
+		<form>
+			<label for= "fname"> First Name </label> 
+			<input type = "text" id = "fname" name = "fname">
+			<br>
+			<label for= "fname"> Last Name </label>
+			<input type = "text" id = "lname" name = "fname">
+			<br>
+			<textarea> Your comments and/or questions </textarea>
+		</form>
+		</div>
+		</div>
+
+	</div> 
+
+
+<!--JQuery Script for navigation bar to work -->
+<script src = "jquery.nav.js"></script> 
+<script>
+	$(document).ready(function() {
+			$('.nav').onePageNav();
+	});
+</script>
+
+</body>
+
+
+
